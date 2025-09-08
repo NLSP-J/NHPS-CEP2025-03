@@ -23,7 +23,7 @@ actual_health = 50
 phase = 0
 player_size = 40
 player_pos = [win_width / 2, win_height - player_size]
-player_image = pg.image.load('mario.png')
+player_image = pg.image.load('./assets/images/mario.png')
 player_image = pg.transform.scale(player_image, (player_size, player_size))
 
 obj_size = 20
@@ -386,6 +386,7 @@ async def main():
 
 
     pg.quit()
+
 
 
 asyncio.run(main())
